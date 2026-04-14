@@ -90,12 +90,12 @@ class ReviewOrchestrator:
     api_key : str
         Your Anthropic API key (from console.anthropic.com).
     model : str
-        Claude model to use. Defaults to claude-sonnet-4-20250514.
+        Claude model to use. Defaults to claude-sonnet-4-5.
     max_retries : int
         Number of retry attempts on API failure.
     """
 
-    MODEL = "claude-sonnet-4-20250514"
+    MODEL = "claude-sonnet-4-5"
 
     PROMPT_TEMPLATE = """You are an expert review analysis engine. Analyze the customer review below and respond ONLY with a valid JSON object — no markdown, no explanation, just raw JSON.
 
