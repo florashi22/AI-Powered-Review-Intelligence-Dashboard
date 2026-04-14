@@ -1,0 +1,38 @@
+# Environment & secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ML artifacts
+models/*.pkl
+models/*.pt
+models/*.bin
+
+# Data (large files — use Git LFS or host separately)
+data/yelp_review_20k.json
+data/yelp_review_1200.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
