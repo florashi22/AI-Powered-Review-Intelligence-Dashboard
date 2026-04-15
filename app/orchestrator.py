@@ -19,11 +19,10 @@ from __future__ import annotations
 import json
 import re
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Optional
 
 import anthropic
-
 
 # ── Data classes ──────────────────────────────────────────────────────────────
 
@@ -173,7 +172,7 @@ Rules:
                     raise ValueError(
                         f"Claude returned invalid JSON after {self.max_retries + 1} attempts: {e}"
                     ) from e
-            except anthropic.APIError as e:
+            except anthropic.APIError:
                 if attempt == self.max_retries:
                     raise
                 time.sleep(2 ** attempt)  # exponential backoff

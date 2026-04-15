@@ -7,14 +7,14 @@ Run:
     streamlit run app/streamlit_app.py
 """
 
-import streamlit as st
-import anthropic
 import json
 import re
-import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
 from pathlib import Path
+
+import anthropic
+import matplotlib.pyplot as plt
+import pandas as pd
+import streamlit as st
 
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
